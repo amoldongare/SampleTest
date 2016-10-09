@@ -1,0 +1,42 @@
+<ion-view view-title="Profile" ng-controller="LaunchCtrl as LaunchVm">
+    <ion-nav-buttons side="left">
+        <button ng-click="$ionicGoBack()" class="button button-icon button-clear ion-android-arrow-back">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <div class="item item-avatar">
+                <img src="img/icon.jpg" style="max-height:70px;max-width:70px;margin-top: 20px;">
+                <h1 class="bold positive">{{LaunchVm.userDetails.name.first}} {{LaunchVm.userDetails.name.last}}</h1>
+                <h3 class="bold positive">{{LaunchVm.userDetails.permissions}}</h3>
+                <h4 class="bold positive">{{LaunchVm.userDetails.title}}</h4>
+                <span class="icon-left ion-ios-location state positive">{{LaunchVm.userDetails.municipality.country}},{{LaunchVm.userDetails.municipality.state}}</span>
+            </div>
+            <hr>
+            <a class="item item-icon-left">
+                <i class="icon ion-email"></i> {{LaunchVm.userDetails.username}}
+            </a>
+            <hr>
+            <!--<a class="item item-icon-left">
+                <i class="icon ion-iphone"></i> {{LaunchVm.userDetails.phone || 8087532721}}
+            </a>-->
+            <!--<a class="item item-icon-left">
+                <i class="icon ion-ios-clock"></i> <span class="bold" am-time-ago="LaunchVm.userDetails.created"></span>
+            </a>-->
+            
+            <ion-checkbox ng-model="LaunchVm.printerConfirm" ng-change="LaunchVm.setPrinterFlag(LaunchVm.printerConfirm)">Reprint Ticket Confirmation?</ion-checkbox>
+            <!--<div class="item item-input item-select">
+                <div class="input-label">
+                    Working Zones
+                </div>
+                <select>
+                <option ng-repeat="zone in LaunchVm.userDetails.municipality.zones">{{zone.label}}</option>
+                </select>
+            </div>-->
+            <hr>
+            <div class="item text-center">
+                <button class="button button-small button-outline button-assertive">Change Password</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

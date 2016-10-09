@@ -1,0 +1,51 @@
+<ion-modal-view translate-namespace="RECENT_TICKET" class="ticket-view">
+    <div class="bar bar-header">
+        <button class="button-icon icon ion-close" ng-click="closeModal()"></button>
+        <h1 class="title" translate=".VOID_TICKET.VIEW_TITLE">Void Ticket</h1>
+    </div>
+    <ion-content class="has-header recent-ticket-view">
+        <div class="list">
+            <div class="item ticket-details-img">
+                <div class="list">
+                    <a class="item">
+                        <h1><b class="light">{{RecentTicketVm.ticketDetails.vehicle.licensePlate}}</b></h1>
+                        <div ng-switch on="RecentTicketVm.ticketDetails.state">
+                            <div ng-switch-when="issued">
+                                <span class="badge badge-black badge-outline" translate=".TICKET_STATE.ISSUED">{{RecentTicketVm.ticketDetails.state}}</span>
+                            </div>
+                            <div ng-switch-when="invalid">
+                                <span class="badge badge-assertive" translate=".TICKET_STATE.INVALID">{{RecentTicketVm.ticketDetails.state}}</span>
+                            </div>
+                            <div ng-switch-when="paid">
+                                <span class="badge badge-balanced" translate=".TICKET_STATE.PAID">{{RecentTicketVm.ticketDetails.state}}</span>
+                            </div>
+                            <div ng-switch-default>
+                                <span class="badge badge-black badge-outline">{{RecentTicketVm.ticketDetails.state}}</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p>
+                        <h2><b am-time-ago="RecentTicketVm.ticketDetails.issued" class="light"></b></h2>
+                    </p>
+                    <p>
+                        <h2><b class="light">{{RecentTicketVm.ticketDetails.zone.label}}</b></h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list padding">
+            <h4 class="title"><span translate=".VOID_TICKET.VOID_TEXT">Void this ticket for</span> {{RecentTicketVm.ticketDetails.vehicle.licensePlate}}?</h4>
+            <label class="item item-input item-floating-label">
+                <textarea draggable="true" ng-model="optionalDesc" maxlength="300" placeholder="{{'RECENT_TICKET.REASON' | translate}}" rows="2" cols="10">
+                </textarea>
+            </label>
+            <b class="text-count stable">{{optionalDesc.length || 0}}/300</b>
+        </div>
+        <div class="row text-center">
+            <div class="col"><button class="button button-small button-default" ng-click="closeModal()" translate=".BTN_CANCEL">Cancel</button></div>
+            <div class="col"><button class="button button-small button-assertive" translate=".BTN_VOID">Void</button></div>
+        </div>
+
+    </ion-content>
+</ion-modal-view>

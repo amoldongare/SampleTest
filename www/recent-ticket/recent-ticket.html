@@ -1,0 +1,51 @@
+<ion-view translate-namespace="RECENT_TICKET" view-title="{{ 'RECENT_TICKET.VIEW_TITLE' | translate }}" ng-controller="RecentTicketCtrl as RecentTicketVm">
+    <ion-nav-buttons side="right">
+        <button ng-hide="true" ui-sref="tab.reservations" class="button button-icon button-clear">
+            <i class="icon ion-camera-icon"></i>
+        </button>
+        <button ng-click="RecentTicketVm.openPopover($event)" class="button button-icon button-clear">
+			<i class="icon ion-more-details"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header recent-ticket-view">
+        <div class="list hor-padding-16">
+            <div ng-repeat="recentTicket in RecentTicketVm.issueTicketList as filteredResults track by $index">
+                <div class="item row" ui-sref="ticketDetails({ticketDetails: recentTicket})">
+                    <div class="col col-25 recent-ticket-img-container" style="background-image:url({{recentTicket.images[0].urls.cdnUri || 'img/icon/MR_LogoPurple.svg'}});">
+                    </div>
+                    <div class="col col-75 padding-left-16">
+                        <div><span class="small-heading">{{recentTicket.vehicle.licensePlate}}</span>
+                            <div ng-switch on="recentTicket.state">
+                                <div ng-switch-when="issued">
+                                    <span class="badge badge-black badge-outline" translate=".TICKET_STATE.ISSUED">{{recentTicket.state}}</span>
+                                </div>
+                                <div ng-switch-when="invalid">
+                                    <span class="badge badge-assertive" translate=".TICKET_STATE.INVALID">{{recentTicket.state}}</span>
+                                </div>
+                                <div ng-switch-when="paid">
+                                    <span class="badge badge-balanced" translate=".TICKET_STATE.PAID">{{recentTicket.state}}</span>
+                                </div>
+                                <div ng-switch-default>
+                                    <span class="badge badge-black badge-outline">{{recentTicket.state}}</span>
+                                </div>
+                            </div>
+                            <span am-time-ago="recentTicket.issued" class="issued-at small-text light-weight icon-left ion-android-time"></span>
+                        </div>
+                        <div ng-repeat="violation in recentTicket.violations" class="ticket-violations small-text"><span class="icon-left ion-ios-pricetag-outline royal">0409</span>{{violation.label}}</div>
+                    </div>
+                    <div class="arrow-button-right">
+                        <button type="button" ui-sref="ticketDetails({ticketDetails: recentTicket})"><i class="ion-icon ion-android-arrow-forward"></i></button>
+                    </div>
+                </div>
+                <hr class="seperation" />
+            </div>
+        </div>
+        <div ng-if="!filteredResults.length">
+            <p class="text-center item-text-wrap"><i style="font-size:32px;" class="icon ion-android-document stable"></i></p>
+            <p class="text-center item-text-wrap" translate=".EMPTY_MESSAGE">You have not issued ticket yet</p>
+            <div class="row text-center">
+                <button type="button" class="button button-full button-calm" translate=".BTN_NEWTICKET">START NEW TICKET</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

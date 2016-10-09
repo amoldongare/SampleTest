@@ -1,0 +1,191 @@
+{
+  "MODAL_POPUP" : {
+    "POPUP_SCANER" : {
+      "TITLE" : "Open plate scanner for all new tickets by default?",
+      "TEMPLATE" : "Turning on will always initiate the plate scanner before you begin a new ticket.You can toggle this feature in Settings > Scanner Preferences.",
+      "BTN_SAVE" : "TURN ON",
+      "BTN_CANCEL" : "Cancel"
+    },
+    "FORM_INVALID" : {
+      "TITLE" : " Form Incomplete",
+      "TEMPLATE" : "Please fill out all required Information before submitting a new ticket,then try again.",
+      "BTN_OK" : "Ok"
+    },
+    "CONFIRM_VIO" : {
+      "TITLE" : "Are you sure?",
+      "TEMPLATE" : "This will add violation to the non expired ticket.",
+      "BTN_SAVE" : "Ok",
+      "BTN_CANCEL" : "CANCEL"
+    },
+    "CLEAR_FORM" : {
+      "TITLE" : "Form Action",
+      "TEMPLATE" : "Are you sure you want to romove form changes.",
+      "BTN_SAVE" : "Ok",
+      "BTN_CANCEL" : "CANCEL"
+    },
+    "DISCARD" : {
+      "TITLE" : "Start new ticket?",
+      "TEMPLATE" : "This will overwrite any citation you are in the process of writing.",
+      "BTN_SAVE" : "Ok",
+      "BTN_CANCEL" : "CANCEL"
+    },
+    "PRINTER_CONF" : {
+      "TITLE" : "Reprint this ticket?",
+      "TEMPLATE" : "This will not make any changes to the citation",
+      "TOGGLE" : "Dont ask this again",
+      "BTN_SAVE" : "Ok",
+      "BTN_CANCEL" : "CANCEL"
+    },
+    "REMOVE_PHOTO" : {
+      "TITLE" : "Delete photo?",
+      "TEMPLATE" : "Are you sure you want to remove this photo?",
+      "BTN_SAVE" : "Ok",
+      "BTN_CANCEL" : "CANCEL"
+    }
+  },
+  "RESERVATIONS": {
+    "PLATE": "plate",
+    "STATE": "state",
+    "ZONE": "zone",
+    "TIME": "time",
+    "VIEW_TITLE": "Reservations",
+    "SPLASH_MESSAGE": "Loading...english",
+    "MESSAGES": "{{messagecount}} Messages are",
+    "MESSAGES_COUNT": "{messagecount,plural, =0{No Reservations Found} one{1 Reservation Found} other{# Reservations Found}}",
+    "SEARCH_PLACE": "Search",
+    "LABEL_ZONE": "Select Zone",
+    "LABEL_ALL": "All",
+    "BTN_TICKET": "ticket",
+    "BTN_CLOSE": "close",
+    "ISSUE_TCKET": "Issue Ticket",
+    "EXPIRES_TIME" : "Expires",
+    "EXPIRED_TIME" : "Expired",
+    "PROMISE_ERROR" : "Something happened wrong on home page",
+    "ISSUE_ACTION" : "Issue Ticket"
+  },
+  "NEW_TICKET": {
+    "SEARCH" : "Search",
+    "SEARCH_COMMENT": "Search or Enter Custom Comment",
+    "END_TIME": "12",
+    "VIEW_TITLE": "Issue Ticket",
+    "LS_PLATE_PHOLD" : "License Plate or VIN #",
+    "USE_BARCODE" : "Use Barcode Scanner (for VIN #)",
+    "STATE" : "State",
+    "VEHICLE" : {
+      "MAKE" : "Make",
+      "MODEL" : "Model",
+      "COLOR" : "Color",
+      "ZONE" : "Zone"
+    },
+    "ADD_VIOLATION" : "Add Violation",
+    "FINE_AMOUNT" : "Fine Amount",
+    "TOWED_VEHICLE" : "Towed Vehicle?",
+    "COMMENT" : "Comments",
+    "ZONES" : "Zones",
+    "ADD_VIOLATION_MODAL" : {
+      "TITLE" : "Add Violations"
+    },
+    "BTN_CLEAR_ALL" : "Clear All",
+    "BTN_COMPLETE" : "Complete",
+    "VALID" : {
+      "LPLATE_REQ" : "License plate required",
+      "STATE_REQ" : "Please select state",
+      "MAKE_REQ" : "Please select make",
+      "ZONE_REQ" : "Please select zone",
+      "VIOLATION_REQ" : "Please select atleast one violation",
+      "FORM_INVALID" : "Please fill out all required Information before submitting a new ticket,then try again.",
+      "SUBMIT_SUCCESS" : "Form Submitted Successfully",
+      "PROMISE_ERROR" : "Something happened wrong on ticket page"
+    },
+    "QUICK_SELECT" : "Quick Select",
+    "ALL_COLORS" : "All Colors",
+    "ALL_MAKES" : "All Makes",
+    "INTERNAL_COMMENT" : "Add Internal Remark",
+    "EXTERNAL_COMMENT" : "Add Public Comment",
+    "ADD_PHOTO" : "Add Photo Evidence",
+    "PHOTO_LIMIT" : "Max 4 photos"
+  },
+  "LOGIN_PAGE": {
+    "VIEW_TITLE": "Sign In",
+    "BTN_REGISTER": "Sign In",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "LOGIN_SUCCESS" : "Login Successfull",
+    "LOGIN_ERROR" : "Unable to login",
+    "PROMISE_ERROR" : "Something happened wrong on login page",
+    "VALID" : {
+      "NAME_REQ" : "Username required",
+      "EMAIL_VALID" : "Enter valid email address",
+      "PASS_REQ" : "Password required"
+    },
+    "FORM_VALIDATION" : "Please double check all entries",
+    "FORGOT_PASS" : "Forgot Password?"
+  },
+  "SETTING_PAGE": {
+    "VIEW_TITLE": "Device Settings",
+    "BTN_REFRESH": "REFRESH PAIRED PRINTERS",
+    "LANGUAGE": "english",
+    "PAIRED_PRINT" : "Paired Printers",
+    "PRINT_FEED" : "Printer Page Feed",
+    "SCANNER_PREF" : "Scanner Preferences",
+    "USE_BARCODE" : "Use Barcode Scanner (for VIN #)",
+    "PAIRED_WITH" : "Currently paired with",
+    "NOTHING" : "none"
+  },
+  "LAUNCH_PAGE": {
+    "BTN_SETTING": "SETTINGS",
+    "BTN_LOGIN": "SIGN IN",
+    "VERSION": "version"
+  },
+  "RECENT_TICKET": {
+    "VIEW_TITLE": "Recent Tickets",
+    "BTN_NEWTICKET": "START NEW TICKET",
+    "EMPTY_MESSAGE" : "You have not issued ticket yet",
+    "PROMISE_ERROR" : "Something happened wrong on recent ticket page",
+    "STATE": "state",
+    "TICKET_STATE" : {
+      "ISSUED" : "ISSUED",
+      "PAID" : "PAID",
+      "INVALID" : "INVALID"
+    },
+    "VEHICLE" : {
+      "MAKE" : "Make",
+      "MODEL" : "Model",
+      "COLOR" : "Color",
+      "ZONE" : "Zone",
+      "AMOUNT_DUE" : "Amount Due",
+      "TICKET_COMMENT" : "Ticket Comment",
+      "ENFORCE_NOTE" : "Enforcement Note"
+    },
+    "VOID_TICKET" : {
+      "VIEW_TITLE" : "Void Ticket",
+      "VOID_TEXT" : "Void this ticket for"
+    },
+    "ACTION_SHEET" : {
+      "ACTION1" : "Issue New Ticket from Duplicate",
+      "ACTION1_DESC" : "Create a new ticket from this vehicle and leave the original ticket unchanged",
+      "ACTION2" : "Void and Issue New Ticket",
+      "ACTION2_DESC" : "Create a new ticket from this vehicle and void the original ticket"
+    },
+    "REASON" : "Reason(optional)",
+    "BTN_VOID" : "Void",
+    "BTN_CANCEL" : "Cancel",
+    "BTN_REISSUE" : "Reissue",
+    "VIOLATIONS" : "Violations",
+    "TICKET_DETAILS_TITLE" : "Ticket Details",
+    "BTN_SAVE" : "Save Changes",
+    "ADD_NOTE" : "Add Enforcement Note"
+  },
+  "COMMON_VIEW" : {
+    "TITLE" : "Settings",
+    "PROFILE_TITLE" : "Profile",
+    "SETTING_TITLE" : "Settings",
+    "HELP_TITLE" : "Help",
+    "SIGN_OUT" : "Sign Out"
+  },
+  "SCANNER_PREF" : {
+    "VIEW_TITLE" : "Scanner Preferences",
+    "QUICK_SCAN" : "Quick Scan",
+    "STATEMENT" : "Initiate the License plate scanner by default when I begin a new ticket."
+  }
+}

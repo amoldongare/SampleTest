@@ -1,0 +1,46 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic-platform-web-client": "^0.7.1"
+  },
+  "dependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.1",
+    "angular-translate": "^2.11.1",
+    "angular-translate-loader-static-files": "^2.11.1",
+    "messageformat": "^0.3.1",
+    "angular-translate-interpolation-messageformat": "^2.11.1",
+    "angular-i18n": "^1.5.3",
+    "angular-moment": "^0.10.3",
+    "moment": "^2.14.1",
+    "angular-locker": "~2.0.3",
+    "ionic-native": "^1.3.10",
+    "ionic-material": "https://github.com/jfbloom22/Ionic-Material.git#master",
+	  "ionic-toast": "https://github.com/SimpleJoySolutions/ionic-toast.git#master"
+  },
+  "overrides": {
+    "angular-i18n": {
+      "main": [
+        "angular-locale_es.js",
+        "angular-locale_fr.js"
+      ]
+    },
+    "ionic-native": {
+      "main": [
+        "ionic.native.min.js"
+      ]
+    },
+    "ionic-material": {
+      "main": [
+        "./dist/ionic.material.min.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "1.5.3",
+    "moment": "^2.14.1",
+    "ionic": "1.3.1",
+    "angular-animate": "1.5.3",
+    "angular-sanitize": "1.5.3"
+  }
+}

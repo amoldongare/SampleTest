@@ -1,0 +1,26 @@
+.tabs-header{
+	.tab-item.tab-item-active, .tab-item.active, .tab-item.activated{
+		border-bottom:2px solid #fff;
+	}
+	.tab-item{
+		.icon{
+			font-size: 22px;
+		}
+	}
+}
+.bar{
+	box-shadow: none;
+}
+.bar.bar-header .title {
+	left: 0px !important;
+}
+.bar.bar-header .button + .title {
+	line-height: 40px !important;
+}
+.bar .title {
+	position:relative !important;
+}
+div.ionic_toast.toast-error {
+    background: $assertive;
+}
+

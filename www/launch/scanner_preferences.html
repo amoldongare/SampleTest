@@ -1,0 +1,23 @@
+<ion-view translate-namespace="SCANNER_PREF" view-title="{{ 'SCANNER_PREF.VIEW_TITLE' | translate }}" class="scanner-preferences"
+    hide-back-button="true" ng-controller="LaunchCtrl as LaunchVm">
+    <ion-nav-buttons side="left">
+        <button ng-click="$ionicGoBack()" class="button button-icon button-clear ion-android-arrow-back">
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        </br>
+        <div class="list">
+            <div class="item item-toggle toggle-preferences">
+                <h3 class="dark" translate=".QUICK_SCAN">Quick Scan</h3>
+                <span translate=".STATEMENT">Initiate the License plate scanner by default when I begin a new ticket.</span>
+                <label class="toggle toggle-royal">
+                    {{LaunchVm.toggleScanner}}
+                    <input ng-model="LaunchVm.scanner" ng-change="LaunchVm.toggleScanner(LaunchVm.scanner)" type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

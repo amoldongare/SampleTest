@@ -1,0 +1,42 @@
+.login-view{
+
+  //CSS for login view
+  form:hover .signin-button{
+      background-color: $royal;
+  }
+	.list{
+		background: #fff;
+		box-shadow: 3px 0px 2px 0px rgba(80, 80, 80, 0.26);
+		.signin-button{
+			background: #888;
+			color:#fff;
+		}
+		.item{
+			border-bottom:1px solid #efefef;
+		}
+	}
+
+  .error .input-label.calm.input-error{
+      display: none;
+  }
+
+  .error.item-floating-label .input-label.assertive{
+      opacity: 1;
+      top: 0;
+  }
+  i{
+      width: 21px;
+      height: 21px;
+  }
+  .ion-logo-purple{
+	content: url('../img/icons/MR_LogoPurple.svg') !important;
+      width: 120px;
+      height: 120px;
+  }
+  .ion-bluetooth-dark{
+      content: url('../img/icons/Bluetooth_Dark.svg') !important;
+  }
+  .ion-printer-dark{
+      content: url('../img/icons/Printer_Dark.svg') !important;
+  }
+}

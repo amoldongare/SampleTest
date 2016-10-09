@@ -1,0 +1,369 @@
+//CSS for icon and span for launch,login,settings page 
+ion-content {
+    background-color: $background-color;
+}
+ion-content.launch-view {
+    background-color:none;
+}
+.row, .row .col {
+    padding-left:8px;
+    padding-right:8px;
+}
+.bottom-fixed {
+    width: 100%;
+    float: left;
+    position: fixed;
+    bottom:0px;
+}
+.block {
+    display:block;
+}
+// .bar {
+//     height: 56px;
+//     div {
+//         padding-top:6px;
+//     }
+// } 
+// .tab-nav.tabs {
+//     position: absolute;
+//     top: 56px;
+// }
+// .pop-over-view {
+//     position: absolute;
+//     top:20px!important;
+//     border-radius: 0px;
+//     margin-top:0px;
+// }
+// .popover-arrow {
+//     display:none;
+// }
+.launch-devices{
+    font-size: .9em;
+
+    i{
+        font-size: 22px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .col{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+.small-text {
+    font-size:$small-text;
+}
+.light-weight {
+    font-weight: 100;
+}
+.small-heading {
+    font-size: $small-heading;
+    // font-weight: 500;
+}
+.text-center {
+    text-align: center;
+}
+
+.ionic-select-modal{
+    .bar-footer{
+        display: none;
+    }
+    .has-footer{
+        bottom: 0px;
+        top: 44px;
+    }
+    .bar-subheader {
+        .item-input-wrapper{
+            background: transparent;
+        }
+        .button.button-clear{
+            font-size: .60em;
+            color: black;
+        }
+
+    }
+    .bar-header.bar-stable{
+        display: none;
+    }
+    .bar-subheader{
+        top: 0px;
+    }
+}
+.launch_settings-view{
+    i{
+        width: 21px;
+        height: 21px;
+    }
+	.ion-bluetooth-dark{
+		content: url('../img/icons/Bluetooth_Dark.svg') !important;
+	}
+	.ion-printer-dark{
+		content: url('../img/icons/Printer_Dark.svg') !important;
+	}
+    .ion-scanner-dark{
+		content: url('../img/icons/Scan_Dark.svg') !important;
+	}
+}
+
+ .reservation-action.modal.bottom-sheet {
+  bottom: 0;  
+  min-height: initial;
+  top: initial;
+  height:15%;
+}
+
+.launch-settings-action.modal.bottom-sheet {
+  bottom: 0;  
+  min-height: initial;
+  top: initial;
+  height:50%;
+}
+
+.ticket-details-action{
+  bottom: 0;  
+  min-height: initial;
+  top: initial;
+  height:30%;
+}
+.bottom-sheet-close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.modal-backdrop.active{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+}
+// Custom edits to base theme start here
+    // Css for top menu
+.tab-nav{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+// This one's a bit tricky, the default gives a cool little bump to the bottom border when active, but that doesn't work with the box shadow above, so for now, deleted. -copu
+.tab-item.activated {
+	height: calc(100% + 0px); /* Stretch */
+}
+.item-select select {
+    background-color: transparent;
+}
+// .no-border {
+//     border: 0px!important;
+// }
+.row.no-padding {
+    padding: 0px;}
+.ion-reservations{
+	content: url('../img/icons/Reservations.svg') !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 14px auto !important;
+}
+.ion-recent-ticket{
+	content: url('../img/icons/RecentTickets.svg') !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 14px auto !important;
+}
+.ion-new-ticket{
+	content: url('../img/icons/NewTicket.svg') !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 14px auto !important;
+}
+.ion-camera-icon{
+	content: url('../img/icons/Camera_White.svg') !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 5px auto !important;
+}
+.hor-padding-16 {
+    padding:0 16px;
+    // .row {
+    //     padding-left: 0px;
+    //     padding-right:0px;
+    // }
+}
+.hor-padding-24 {
+    padding: 0 24px;
+}
+.padding-left-16 {
+    padding-left:16px;
+}
+.padding-top-16 {
+    padding-top:16px;
+}
+.padding-bottom-16 {
+    padding-bottom:16px;
+}
+.padding-top-8 {
+    padding-top:8px;
+}
+.padding-top-4 {
+    margin-top:4px;
+}
+// vert-padding-4 {
+//     padding:4px 0;
+//     // Maybe this is useful? I'll see as i skin the rest of the app, for now it's only in reservations sass -copu
+//     // .row {
+//     //     padding-top: 0px;
+//     //     padding-bottom:0px;
+//     // }
+// }
+
+span.icon-left:before {
+    padding-right: 6px;
+}
+
+.button-tiny {
+  padding: 2px 10px 1px;
+  min-width: 28px;
+  min-height: 30px;
+  font-size: $small-text;
+  line-height: 26px; }
+  .button-tiny .icon:before, .button-tiny.icon:before, .button-tiny.icon-left:before, .button-tiny.icon-right:before {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 3px; }
+    .button-tiny.button-clear {
+        font-weight:900;
+    }
+
+.notification-bar-left {
+    position: absolute;
+    display: block;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    &.calm {
+        background-color: $calm;
+    }
+    &.accent {
+        background-color: $accent;
+    }
+    &.assertive {
+        background-color: $assertive;
+    }
+}
+.badge, .item .badge {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:$small-text;
+    padding: 2px 6px;
+}
+.badge.badge-outline {
+    &.badge-calm {
+        border: 1px solid $calm;
+        color: $calm;
+        background-color:transparent;
+    	}
+    &.badge-accent {
+        border: 1px solid $accent;
+        color: $accent;
+    	}
+    &.badge-assertive {
+        border: 1px solid $assertive;
+        color: $assertive;
+        background-color:transparent;
+    	}
+    &.badge-stable {
+        border: 1px solid $stable;
+        color: $stable;
+        background-color:transparent;
+        }
+    &.badge-black {
+        border: 1px solid $coal-black;
+        color: $coal-black;
+        background-color:transparent;
+        }
+	}
+.rounded-badge {
+    display:inline;
+    border-radius:15px;
+    padding:2px 6px;
+    text-align:center;
+    font-size:$small-text;
+    text-transform: uppercase;
+    &.calm.badge-outline {
+        border: 1px solid $calm;
+        color: $calm;
+        background-color: transparent;
+    }
+    &.accent.badge-outline {
+        border: 1px solid $accent;
+        color: $accent;
+        background-color: transparent;
+    }
+    &.assertive.badge-outline {
+        border: 1px solid $assertive;
+        color: $assertive;
+        background-color: transparent;
+    }
+    &.stable.badge-outline {
+        border: 1px solid $stable;
+        color: $stable;
+        background-color: transparent;
+    }
+    &.black.badge-outline {
+        border: 1px solid black;
+        color: black;
+        background-color: transparent;
+    }
+}
+
+.button {
+    max-width:100%;
+
+}
+.text-right {
+    text-align: right;
+}
+.ion-more-details{
+	content: url('../img/icons/more.svg') !important;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 5px auto !important;
+}
+.ion-printer-white{
+    content: url('../img/icons/Printer_White.svg') !important;
+    width: 19px !important;
+    height: 19px !important;
+    margin: 5px auto !important;
+}
+.list.ripped-paper {
+    margin-top:-28px;
+}
+.list.ripped-paper:before {
+    margin-top:-1px;
+    z-index: -1;
+}
+.uppercaseVal{
+    text-transform: uppercase;
+}
+
+.ripped-paper:before {
+    content:"";
+    display:block;
+    // position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:44px;
+    background: linear-gradient(#fff 0%, transparent 0%), linear-gradient(135deg, $background-color 33.33%, transparent 33.33%) 0 0%, $background-color  linear-gradient(45deg, $background-color  33.33%, #fff 33.33%) 0 0%;
+    background: -webkit-linear-gradient(#fff 0%, transparent 0%), -webkit-linear-gradient(135deg, $background-color  33.33%, transparent 33.33%) 0 0%, $background-color  -webkit-linear-gradient(45deg, $background-color  33.33%, #fff 33.33%) 0 0%;
+    background: -o-linear-gradient(#fff 0%, transparent 0%), -o-linear-gradient(135deg, $background-color 33.33%, transparent 33.33%) 0 0%, $background-color  -o-linear-gradient(45deg, $background-color  33.33%, #fff 33.33%) 0 0%;
+    background: -moz-linear-gradient(#fff 0%, transparent 0%), -moz-linear-gradient(135deg, $background-color 33.33%, transparent 33.33%) 0 0%, $background-color  -moz-linear-gradient(45deg, $background-color  33.33%, #fff 33.33%) 0 0%;
+    background-repeat: repeat-x;
+    background-size: 0px 100%, 20px 60px, 20px 60px;
+    }
+    hr.seperation {
+        display: block;
+    	height: 1px;
+    	border: 0;
+   	 	border-top: 1px solid #e5e5e5;
+    	margin: 0;
+    	padding: 0;
+		margin-left:0px;
+		margin-right:-16px;
+	}

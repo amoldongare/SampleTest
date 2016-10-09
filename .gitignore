@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+bower_components/
+platforms/*
+plugins/*
+www/vendor
+www/css
+www/lib
+ionic.app*.css
+*.ipa
+

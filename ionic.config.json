@@ -1,0 +1,12 @@
+{
+  "name": "meterreader-app",
+  "app_id": "aec62ffa",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

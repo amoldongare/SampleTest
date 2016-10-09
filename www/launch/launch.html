@@ -1,0 +1,24 @@
+<ion-view ng-controller="LaunchCtrl as LaunchVm" title="Launch" translate-namespace="LAUNCH_PAGE" class="launch-view" hide-nav-bar="true">
+    <ion-content padding="true" class="has-header launch-view">
+        <p class="text-center"><i class="icon ion-logo-white"></i></p>
+        <p>
+            <h2 class="text-center light">MeterReader</h2>
+        </p>
+        <p class="text-center launch-title"><small class="light" translate=".VERSION">Version</small><small class="light"> {{appVersion}}</small></p>
+        <div class="row launch-devices hor-padding-24 padding-top-16" ng-show="LaunchVm.currentDevice">
+            <div class="col col-50">
+                <i class="icon ion-ios-printer-white"></i> <span class="light">{{LaunchVm.currentDevice.name}}</span>
+            </div>
+            <div class="col col-50">
+                <i class="icon ion-bluetooth-white"></i> <span class="light">{{LaunchVm.currentDevice.address}}</span>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bottom-fixed padding-bottom-16 hor-padding-24">
+        <div class="row text-center">
+            <div class="col"><button class="button button-full button-royal" ui-sref="settings" translate=".BTN_SETTING">SETTINGS</button></div>
+            <div class="col"><button class="button button-full button-light" ui-sref="login" translate=".BTN_LOGIN">SIGN IN</button></div>
+        </div>
+        <p class="text-center"><a href="" class="light">{{LaunchVm.apiEndPoint}}</a></p>
+    </div>
+</ion-view>

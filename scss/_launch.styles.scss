@@ -1,0 +1,42 @@
+//CSS for launch view
+.launch-view
+{
+	background-image: url('../img/Login_BG_2208.jpg');
+	background-size: cover;
+	i{
+        width: 21px;
+        height: 21px;
+    }
+	.ion-ios-printer-white{
+		content: url('../img/icons/Printer_White.svg') !important;
+	}
+	.ion-bluetooth-white{
+		content: url('../img/icons/Bluetooth_White.svg') !important;
+	}
+	.ion-logo-white{
+		content: url('../img/icons/MR_LogoMark.svg') !important;
+		width: 75px;
+        height: 75px;
+	}
+}
+
+//CSS for settings view
+.launch_settings-view{
+	background: #f1f5f7;
+	i{
+		font-size: 22px;
+	}
+}
+
+.scanner-preferences{
+	.list .toggle-preferences{
+		span{
+			color:#7b7b7b;
+			white-space: normal;
+		}
+	}
+}
+
+
+
+

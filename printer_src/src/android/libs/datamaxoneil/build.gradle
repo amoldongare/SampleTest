@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('DO_AndroidSDK_v2.4.0.aar'))

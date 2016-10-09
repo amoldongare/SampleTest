@@ -1,0 +1,190 @@
+{
+  "MODAL_POPUP" : {
+    "POPUP_SCANER" : {
+      "TITLE" : "Por favor seleccione zone?",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone Por favor seleccione zone Por favor seleccione zone Por favor seleccione zone.",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    },
+    "FORM_INVALID" : {
+      "TITLE" : " favor seleccione",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone Por favor seleccione zone Por favor.",
+      "BTN_OK" : "completar"
+    },
+    "CONFIRM_VIO" : {
+      "TITLE" : "favor seleccione?",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone.",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    },
+    "CLEAR_FORM" : {
+      "TITLE" : "favor seleccione",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone.",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    },
+    "DISCARD" : {
+      "TITLE" : "favor seleccione?",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone.",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    },
+    "PRINTER_CONF" : {
+      "TITLE" : "favor seleccione?",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone.",
+      "TOGGLE" : "favor seleccione?",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    },
+    "REMOVE_PHOTO" : {
+      "TITLE" : "favor seleccione?",
+      "TEMPLATE" : "Por favor seleccione zone Por favor seleccione zone?",
+      "BTN_SAVE" : "completar",
+      "BTN_CANCEL" : "limpiar"
+    }
+  },
+  "RESERVATIONS": {
+    "PLATE": "क्रमांक पट्टी",
+    "STATE": "राज्य",
+    "ZONE": "zone",
+    "TIME": "time",
+    "VIEW_TITLE": "Reservas",
+    "SPLASH_MESSAGE": "Loading...spanish",
+    "MESSAGES": "{{messagecount}} Messages",
+    "MESSAGES_COUNT": "{messagecount,plural, =0{No reservas encontrado} one{1 de reserva que figura} other{# reservas encontrado}}",
+    "SEARCH_PLACE": "buscar",
+    "LABEL_ZONE": "Seleccionar zona",
+    "LABEL_ALL": "todas",
+    "BTN_TICKET": "boleto",
+    "BTN_CLOSE": "cerca",
+    "ISSUE_TCKET": "billete tema",
+    "EXPIRES_TIME" : "expira",
+    "EXPIRED_TIME" : "muerto",
+    "PROMISE_ERROR" : "Algo pasó mal en la página de inicio",
+    "ISSUE_ACTION" : "Ticket tema"
+  },
+  "NEW_TICKET": {
+    "SEARCH" : "buscar",
+    "END_TIME": "10",
+    "VIEW_TITLE": "billete tema",
+    "LS_PLATE_PHOLD" : "placa",
+    "USE_BARCODE" : "Usa el escáner de código de barras",
+    "STATE" : "estado",
+    "VEHICLE" : {
+      "MAKE" : "hacer",
+      "MODEL" : "modelo",
+      "COLOR" : "color",
+      "ZONE" : "zonas"
+    },
+    "ADD_VIOLATION" : "Añadir Violación",
+    "FINE_AMOUNT" : "monto de la multa",
+    "TOWED_VEHICLE" : "vehículo remolcado?",
+    "COMMENT" : "comentarios",
+    "ZONES" : "zonas",
+    "ADD_VIOLATION_MODAL" : {
+      "TITLE" : "Añadir Violaciónes"
+    },
+    "BTN_CLEAR_ALL" : "limpiar todo",
+    "BTN_COMPLETE" : "completar",
+    "VALID" : {
+      "LPLATE_REQ" : "Por favor seleccione placa",
+      "STATE_REQ" : "Por favor seleccione estado",
+      "MAKE_REQ" : "Por favor seleccione hacer",
+      "ZONE_REQ" : "Por favor seleccione zone",
+      "VIOLATION_REQ" : "selecciona al menos uno violation",
+      "FORM_INVALID" : "vuelva a verificar todas las entradas",
+      "SUBMIT_SUCCESS" : "formar presentar el éxito",
+      "PROMISE_ERROR" : "Algo pasó mal en la página de entradas"
+    },
+    "QUICK_SELECT" : "Selección rápida",
+    "ALL_COLORS" : "todos los colores",
+    "ALL_MAKES" : "todas las marcas",
+    "INTERNAL_COMMENT" : "comentarios internos",
+    "EXTERNAL_COMMENT" : "comentarios externos",
+    "ADD_PHOTO" : "añadir imagen",
+    "PHOTO_LIMIT" : "Max 4 fotos"
+  },
+  "LOGIN_PAGE": {
+    "VIEW_TITLE": "Registrarse",
+    "BTN_REGISTER": "registrarse",
+    "USERNAME": "nombre de usuario",
+    "PASSWORD": "contrase",
+    "LOGIN_SUCCESS" : "exitoso inicio de sesión",
+    "LOGIN_ERROR" : "habilitado para iniciar sesión",
+    "PROMISE_ERROR" : "Algo pasó mal en la página de inicio de sesión",
+    "VALID" : {
+      "NAME_REQ" : "Nombre de usuario requerido",
+      "EMAIL_VALID" : "Introduzca la dirección de correo electrónico válida",
+      "PASS_REQ" : "Password requerido"
+    },
+    "FORM_VALIDATION" : "vuelve a comprobar todas las entradas",
+    "FORGOT_PASS" : "olvidó contrase?"
+  },
+  "SETTING_PAGE": {
+    "VIEW_TITLE": "ajustes",
+    "BTN_REFRESH": "refrescar la impresora",
+    "LANGUAGE": "spanish",
+    "PAIRED_PRINT" : "impresoras pareadas",
+    "PRINT_FEED" : "alimentación página de la impresora",
+    "SCANNER_PREF" : "las preferencias del escáner",
+    "USE_BARCODE" : "Usa el escáner de código de barras",
+    "PAIRED_WITH" : "emparejado con actualmente",
+    "NOTHING" : "pareadas"
+  },
+  "LAUNCH_PAGE": {
+    "BTN_SETTING": "ajustes",
+    "BTN_LOGIN": "registrarse",
+    "VERSION": "versión"
+  },
+  "RECENT_TICKET": {
+    "VIEW_TITLE": "entradas recientes",
+    "BTN_NEWTICKET": "nuevo billete",
+    "EMPTY_MESSAGE" : "Usted no ha emitido todavía billete",
+    "PROMISE_ERROR" : "Algo pasó mal en la página reciente de entradas",
+    "STATE" : "estado",
+    "TICKET_STATE" : {
+      "ISSUED" : "emitido",
+      "PAID" : "pagado",
+      "INVALID" : "invalido"
+    },
+    "VEHICLE" : {
+      "MAKE" : "hacer",
+      "MODEL" : "modelo",
+      "COLOR" : "color",
+      "ZONE" : "zonas",
+      "AMOUNT_DUE" : "monto a pagar",
+      "TICKET_COMMENT" : "Comentar Ticket",
+      "ENFORCE_NOTE" : "Nota de Aplicación"
+    },
+    "VOID_TICKET" : {
+      "VIEW_TITLE" : "billete de vacío",
+      "VOID_TEXT" : "Anulará esta billete para"
+    },
+    "ACTION_SHEET" : {
+      "ACTION1" : "Emitir nuevas entradas de duplicados",
+      "ACTION1_DESC" : "Crear un nuevo billete de este vehículo y dejar el billete original sin cambios",
+      "ACTION2" : "Anular y emitir nuevas entradas",
+      "ACTION2_DESC" : "Crear un nuevo billete de este vehículo y anular el billete original"
+    },
+    "REASON" : "Razon(Opcional)",
+    "BTN_VOID" : "vacío",
+    "BTN_CANCEL" : "cancelar",
+    "BTN_REISSUE" : "Reedición",
+    "VIOLATIONS" : "violaciónes",
+    "TICKET_DETAILS_TITLE" : "detalles de entradas",
+    "BTN_SAVE" : "Guardar cambios",
+    "ADD_NOTE" : "Nota de Aplicaci"
+  },
+  "COMMON_VIEW" : {
+    "TITLE" : "ajustes",
+    "PROFILE_TITLE" : "perfil",
+    "SETTING_TITLE" : "ajustes",
+    "HELP_TITLE" : "ayuda",
+    "SIGN_OUT" : "cerrar sesión"
+  },
+  "SCANNER_PREF" : {
+    "VIEW_TITLE" : "cerrar sesión",
+    "QUICK_SCAN" : "ajustes",
+    "STATEMENT" : "detalles de entradas cerrar sesión."
+  }
+}

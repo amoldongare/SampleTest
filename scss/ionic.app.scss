@@ -1,0 +1,50 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+$assertive:                       #de0000;
+$positive:                        #0097ba; //teal_blue
+$calm:                            #009abc;
+$royal:                           #4C3891;  // blueberry_two
+$blueberry_one:                   #3c3982; //blueberry
+$deep_lavender:                   #756fb3; //deep_lavender
+$blueberry_90:                    rgba(71, 68, 147, 0.9); //blueberry_90
+$small-text:                        12px;
+$stable:                          #696c6d;
+$accent:                          #FEFA3C;
+$bold-sub-heading:                  24px;
+$small-heading:                     18px;
+$list-font-size:                     16px;
+$background-color:                #FAFAFA;
+$stable-accent:                   #E3E8EA;
+$coal-black:                      #1f1f1f;
+$coal-miners-face:                #434444;
+$dark:                            #1f1f1f;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+// Include Ionic Material
+@import "www/lib/ionic-material/src/scss/index";
+@import "scss/_home.styles.scss";
+@import "scss/_reservations.styles.scss";
+@import "scss/_launch.styles.scss";
+@import "scss/_login.scss";
+@import "scss/_common.scss";
+@import "scss/_ticket.scss";
+@import "scss/_settings.scss";

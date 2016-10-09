@@ -1,0 +1,20 @@
+<ion-bottom-sheet-view translate-namespace="RECENT_TICKET" class="ticket-details-action">
+    <ion-content>
+        <div class="list">
+            <button class="bottom-sheet-close button-icon icon ion-android-close" ng-click="closeModal()"></button>
+        </div>
+        <div class="list">
+            <a class="item item-icon-left" ng-click="closeModal()" ui-sref="tab.newticket({ticketData: RecentTicketVm.ticketDetails,forceTicketData:null})">
+                <span class="assertive"><b>{{RecentTicketVm.ticketDetails.vehicle.licensePlate}}</b></span>
+                <h2 translate=".ACTION_SHEET.ACTION1">Issue New Ticket from Duplicate</h2>
+                <h4 translate=".ACTION_SHEET.ACTION1_DESC">Create a new ticket from this vehicle and leave the original ticket unchanged</h4>
+            </a>
+            <hr>
+            <a class="item item-icon-left">
+                <span class="assertive"><b>{{RecentTicketVm.ticketDetails.vehicle.licensePlate}}</b></span>
+                <h2 translate=".ACTION_SHEET.ACTION2">Void and Issue New Ticket</h2>
+                <h4 translate=".ACTION_SHEET.ACTION2_DESC">Create a new ticket from this vehicle and void the original ticket</h4>
+            </a>
+        </div>
+    </ion-content>
+</ion-bottom-sheet-view>
