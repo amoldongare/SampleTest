@@ -7,20 +7,13 @@ function RecentTicketCtrl(UserService, $log,$translate, $ionicPopup, $ionicLoadi
   $scope.userval = {};
   RecentTicketVm.$scope = $scope;
   RecentTicketVm.openModal = openModal;
-  RecentTicketVm.issueTicketList = [];
-  RecentTicketVm.ticketDetails = {};
   RecentTicketVm.translateToast = translateToast;
   RecentTicketVm.openPopover = openPopover;
   RecentTicketVm.openVoidModal = openVoidModal;
   RecentTicketVm.showConfirm = showConfirm;
-  RecentTicketVm.setPrinterFlag = setPrinterFlag;
 
   $scope.closeModal = function () {
     $scope.closeModalService();
-  }
-
-  function setPrinterFlag(printerFlag) {
-    UserService.setPrinter(printerFlag);
   }
 
   function openVoidModal() {
@@ -87,16 +80,6 @@ function RecentTicketCtrl(UserService, $log,$translate, $ionicPopup, $ionicLoadi
   };
 
   $scope.$on('$ionicView.beforeEnter', function () {
-    UserService.getUser().then(function (res) {
-      $scope.userval = res;
-      UserService.getRecentTickets($scope.userval._id).then(function (results) {
-        $log.debug("fetched ticket details", results);
-        RecentTicketVm.issueTicketList = results.data.ticket;
-      })
-    }).catch(promiseOnRecentTicketFailed);
-    if ($stateParams.ticketDetails) {
-      RecentTicketVm.ticketDetails = $stateParams.ticketDetails;
-    }
   });
 
   function promiseOnRecentTicketFailed(err) {

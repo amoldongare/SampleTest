@@ -7,40 +7,17 @@
     <ion-content class="has-header">
         <ion-list>
             <ion-item>
+                <span class="calm">Change Language</span>
+            </ion-item>
+			<hr class="seperation" />
+			<ion-item>
                 <ion-radio ng-model="choice" ng-click="LaunchVm.changeLanguage('es')" ng-value="'es'"><span class="royal">Spanish</span></ion-radio>
             </ion-item>
+			<hr class="seperation" />
             <ion-item>
                 <ion-radio ng-model="choice" ng-click="LaunchVm.changeLanguage('en')" ng-value="'en'"><span class="royal">English</span></ion-radio>
-            </ion-item>
-            <ion-item class="item-icon-left" ng-click="LaunchVm.getDevices()">
-                <i class="icon ion-bluetooth dark"></i>
-                <span translate=".PAIRED_PRINT">Select Printer</span>
-            </ion-item>
-            <ion-item class="item-icon-left">
-                <i class="icon ion-printer dark"></i>
-                <span translate=".PRINT_FEED">Printer Page Feed</span>
-            </ion-item>
-            <ion-item ng-hide="true" class="item-icon-left" ui-sref="scanner">
-                <i class="icon ion-scanner-dark"></i>
-                <span translate=".SCANNER_PREF">Scanner Preferences</span>
-            </ion-item>
-            <ion-item class="item-icon-left" ng-click="">
-                <i class="icon ion-paper-airplane dark"></i>
-                <span>{{LaunchVm.apiEndPoint}}</span>
             </ion-item>
             <hr class="seperation" />
         </ion-list>
     </ion-content>
-    <div class="bottom-fixed padding-bottom-16 hor-padding-24">
-        <p class="text-center launch-title"><span class="small-text light-weight" translate=".PAIRED_WITH">Currently paired with:</span> <span class="assertive" ng-hide="LaunchVm.currentDevice" translate=".NOTHING"> none</span></p>
-        <div class="row launch-devices" ng-show="LaunchVm.currentDevice">
-            <div class="col col-50 text-center">
-                <i class="icon ion-printer-dark royal"></i> <span>{{LaunchVm.currentDevice.name}}</span>
-            </div>
-            <div class="col col-50 text-center">
-                <i class="icon ion-bluetooth-dark"></i> <span>{{LaunchVm.currentDevice.address}}</span>
-            </div>
-        </div>
-        <button class="button button-block button-dark button-large" translate=".BTN_REFRESH" ng-click="LaunchVm.getDevices()">REFRESH PAIRED PRINTERS</button>
-    </div>
 </ion-view>

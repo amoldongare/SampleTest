@@ -111,7 +111,7 @@
     "USERNAME": "Username",
     "PASSWORD": "Password",
     "LOGIN_SUCCESS" : "Login Successfull",
-    "LOGIN_ERROR" : "Unable to login",
+    "LOGIN_ERROR" : "Username or Password incorrect",
     "PROMISE_ERROR" : "Something happened wrong on login page",
     "VALID" : {
       "NAME_REQ" : "Username required",

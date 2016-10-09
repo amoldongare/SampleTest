@@ -1,73 +1,18 @@
 <ion-view translate-namespace="RESERVATIONS" view-title="{{ 'RESERVATIONS.VIEW_TITLE' | translate }}" ng-controller="ReservationsCtrl as vm"
 	class="reservations-view">
 	<ion-nav-buttons side="right">
-		<button ng-hide="true" ui-sref="tab.reservations" class="button button-icon button-clear">
-			<i class="icon ion-camera-icon"></i>
-        </button>
 		<button ng-click="vm.openPopover($event)" class="button button-icon button-clear">
-			<i class="icon ion-more-details"></i>
+			<i class="icon ion-android-more-vertical"></i>
         </button>
 	</ion-nav-buttons>
 
 	<ion-content class="has-header">
-		<div class="list list-searchbar">
-			<div class="row searchbar-div hor-padding-16">
-				<div class="col col-50 no-padding">
-					<label class="item item-input">
-					<i class="icon ion-search-purple placeholder-icon search-icon"></i>
-					<input class="search-plate" ng-class="{uppercaseVal:vm.searchText}" type="text" placeholder="{{ 'RESERVATIONS.SEARCH_PLACE' | translate }}" ng-model="vm.searchText" />
+		<div class="list">
+			<div class="row">
+				<label class="item item-input">
+					<i class="icon ion-home"></i>
+					<input ng-class="{uppercaseVal:vm.searchText}" type="text" placeholder="{{ 'RESERVATIONS.SEARCH_PLACE' | translate }}" ng-model="vm.searchText" />
 				</label>
-				</div>
-				<div class="col col-50 no-padding">
-					<label style="" class="item item-input item-select">
-					<select class="select-zone" ng-model="vm.licensePlateData">
-					<option value="" translate=".LABEL_ALL">All</option>
-					<option ng-repeat="item in vm.userZones" value="{{item.label}}">{{item.label}}</option>
-					</select>
-					</label>
-				</div>
-			</div>
-			<span class="items-found hor-padding-16" translate=".MESSAGES_COUNT" translate-values="{messagecount : filteredResults.length}"
-				translate-interpolation="messageformat">messages</span>
-		</div>
-		<div class="list list-searchresults">
-			<div class="card" ng-repeat="item in vm.currentReservation | filter:vm.searchText | filter:vm.licensePlateData | orderBy:item.start as filteredResults track by $index">
-				<div class="item search-plate-item hor-padding-16">
-					<span class="accent notification-bar-left" ng-show="(item.end | amDifference : null : 'minutes') >= 0 && (item.end | amDifference : null : 'minutes') < 60 "></span>
-					<span class="assertive notification-bar-left" ng-show="(item.end | amDifference : null : 'minutes') < 0"></span>
-					<span class="calm notification-bar-left" ng-show="(item.end | amDifference : null : 'minutes') >= 60"></span>
-					<div class="row" ng-click="vm.openActionSheet(item,{{item.end | amDifference : null : 'minutes'}} > 0)">
-						<div class="col col-50 license-plate"><span>{{item.vehicle.licensePlate}}</span></div>
-						<div class="col col-50 item-text-wrap expires-expired" ng-show="(item.end | amDifference : null : 'minutes') < 0">
-							<span translate=".EXPIRED_TIME" class="rounded-badge assertive badge-outline">Expired</span><br /><span class="bold"
-								am-time-ago="item.end"></span>
-						</div>
-						<div class="col col-50 item-text-wrap expires-expired" ng-show="(item.end | amDifference : null : 'minutes') >= 60">
-							<span translate=".EXPIRES_TIME" class="rounded-badge calm badge-outline">Expires</span><br /><span class="bold" am-time-ago="item.end"></span>
-						</div>
-						<div class="col col-50 item-text-wrap expires-expired" ng-show="(item.end | amDifference : null : 'minutes') >= 0 && (item.end | amDifference : null : 'minutes') < 60 ">
-							<span translate=".EXPIRES_TIME" class="rounded-badge accent badge-outline text-right">Expires</span><br /><span class="bold"
-								am-time-ago="item.end"></span>
-						</div>
-					</div>
-					<div class="row">
-						<div ng-click="vm.openActionSheet(item,{{item.end | amDifference : null : 'minutes'}} > 0)" class="col col-50 item-text-wrap state-city-container"><span class="city-zone royal">{{item.zone.state}}</span><br /><span class="icon-left ion-ios-location state">{{item.zone.label}}</span></div>
-						<div class="col col-50 text-right" ng-show="(item.end | amDifference : null : 'minutes') < 0">
-							<button type="button" class="button button-tiny button-assertive icon-right ion-android-add" ui-sref="tab.newticket({ticketData: item,forceTicketData:null})"
-								translate=".ISSUE_TCKET">Issue Ticket</button>
-						</div>
-					</div>
-					<hr class="seperation" />
-				</div>
-			</div>
-		</div>
-		<div ng-if="!filteredResults.length" class="card">
-			<div class="item item-text-wrap">
-				<p class="text-center assertive">No records matched the search</p>
-				<div class="row text-center">
-					<div class="col col-50"><button class="button button-outline button-positive" translate=".BTN_TICKET">Ticket</button></div>
-					<div class="col col-50"><button ng-click="vm.clearSearch()" class="button button-outline button-assertive" translate=".BTN_CLOSE">Close</button></div>
-				</div>
 			</div>
 		</div>
 	</ion-content>
