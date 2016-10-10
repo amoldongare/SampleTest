@@ -1,0 +1,15 @@
+<ion-view ng-controller="LaunchCtrl as LaunchVm" title="Launch" translate-namespace="LAUNCH_PAGE" class="launch-view" hide-nav-bar="true">
+    <ion-content padding="true" class="has-header launch-view">
+		</br></br>
+        <p class="text-center"><i class="icon ion-logo-white"></i></p>
+        <p>
+            <h2 class="text-center light">RahulMilks</h2>
+        </p>
+        <p class="text-center launch-title"><small class="light" translate=".VERSION">Version</small><small class="light"> {{appVersion}}</small></p>        
+        </br></br>
+        <div class="row text-center">
+            <div class="col"><button class="button button-full button-royal" ui-sref="settings" translate=".BTN_SETTING">SETTINGS</button></div>
+            <div class="col"><button class="button button-full button-light" ui-sref="login" translate=".BTN_LOGIN">SIGN IN</button></div>
+        </div>
+    </ion-content>
+</ion-view>

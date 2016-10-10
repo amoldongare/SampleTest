@@ -1,0 +1,23 @@
+<ion-view translate-namespace="SETTING_PAGE" view-title="{{ 'SETTING_PAGE.VIEW_TITLE' | translate }}" class="launch_settings-view"
+    hide-back-button="true" ng-controller="LaunchCtrl as LaunchVm">
+    <ion-nav-buttons side="left">
+        <button ng-click="$ionicGoBack()" class="button button-icon button-clear ion-android-arrow-back">
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <ion-list>
+            <ion-item>
+                <span class="calm">Change Language</span>
+            </ion-item>
+			<hr class="seperation" />
+			<ion-item>
+                <ion-radio ng-model="choice" ng-click="LaunchVm.changeLanguage('es')" ng-value="'es'"><span class="royal">Spanish</span></ion-radio>
+            </ion-item>
+			<hr class="seperation" />
+            <ion-item>
+                <ion-radio ng-model="choice" ng-click="LaunchVm.changeLanguage('en')" ng-value="'en'"><span class="royal">English</span></ion-radio>
+            </ion-item>
+            <hr class="seperation" />
+        </ion-list>
+    </ion-content>
+</ion-view>

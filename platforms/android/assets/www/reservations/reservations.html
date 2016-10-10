@@ -1,0 +1,19 @@
+<ion-view translate-namespace="RESERVATIONS" view-title="{{ 'RESERVATIONS.VIEW_TITLE' | translate }}" ng-controller="ReservationsCtrl as vm"
+	class="reservations-view">
+	<ion-nav-buttons side="right">
+		<button ng-click="vm.openPopover($event)" class="button button-icon button-clear">
+			<i class="icon ion-android-more-vertical"></i>
+        </button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header">
+		<div class="list">
+			<div class="row">
+				<label class="item item-input">
+					<i class="icon ion-home"></i>
+					<input ng-class="{uppercaseVal:vm.searchText}" type="text" placeholder="{{ 'RESERVATIONS.SEARCH_PLACE' | translate }}" ng-model="vm.searchText" />
+				</label>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
