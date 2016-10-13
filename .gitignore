@@ -9,3 +9,4 @@ www/lib
 ionic.app*.css
 *.ipa
 
+/platforms
